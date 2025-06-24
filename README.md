@@ -58,6 +58,8 @@ print(fsm.is_accepted(input_sequence))
 
 ## Project Structure 
 
+```
+
 fsm_mod_project/
 ├── fsm.py              # Generic FSM class
 ├── mod_fsm.py          # Mod-N FSM generator
@@ -66,4 +68,4 @@ fsm_mod_project/
 │   └── test_fsm.py     # Unit tests
 └── README.md   
 
-
+```
