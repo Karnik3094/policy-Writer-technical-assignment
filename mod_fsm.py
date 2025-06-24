@@ -12,8 +12,8 @@ def compute_binary_mod(N):
         An FSM instance representing the mod-N automaton for binary inputs.
     """
     
-    states = {f"S{i}" for i in range(N)} # The define number of States; for the mod 3 problem - the number of states corresponds to the divisor; each state determines a possible remainder when divided by divisor
-    transitions = {} # define transitions as a dictionary ; The criterion that maps one state to another
+    states = {f"S{i}" for i in range(N)} # define number of States; for mod 3 problem - the number of states corresponds to the divisor; each state determines a possible remainder when divided by divisor
+    transitions = {} # define transitions as a dictionary key : tuple(current_state,symbol) -> value : next_state; The criterion that maps one state to another
     for r in range(N):
         for b in {'0','1'}:
             new_r = (r * 2 + int(b)) % N # transition criteria ; for the number to be divisible by N; 

@@ -27,10 +27,10 @@ class TestFSM(unittest.TestCase):
     def test_binary_mod_fsm_acceptance(self):
         fsm = compute_binary_mod(3)
 
-        # 6 = binary "110", divisible by 3
+        # int 6 -> binary "110", divisible by 3
         self.assertTrue(fsm.is_accepted("110"))
 
-        # 7 = binary "111", not divisible by 3
+        # int 7 -> binary "111", not divisible by 3
         self.assertFalse(fsm.is_accepted("111"))
 
         # 0 = binary "0", divisible by 3
